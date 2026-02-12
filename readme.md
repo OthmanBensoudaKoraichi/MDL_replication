@@ -1,6 +1,10 @@
-# MDL Leadership Appointments: Replication Materials
+# WHO LEADS IN MASS LITIGATION? EVIDENCE FROM MDL: Replication Materials
 
-This Jupyter notebook contains all data cleaning, analysis, and visualization code used to generate the figures and statistics in "WHO LEADS IN MASS LITIGATION?  EVIDENCE FROM MDL" submitted to the Yale Law Review.
+This repository contains the datasets and analysis code used to generate all figures and statistics in "WHO LEADS IN MASS LITIGATION? EVIDENCE FROM MDL" submitted to the Yale Law Review.
+
+**Contents:**
+- `datasets/` — Raw data files (appointments, attorneys, MDLs, orders, ABA law schools)
+- `analysis.ipynb` — Complete Jupyter notebook with data cleaning, analysis, and visualization code
 
 ## Notebook Structure
 
@@ -67,9 +71,16 @@ This Jupyter notebook contains all data cleaning, analysis, and visualization co
 
 All code assumes the following datasets are available in the notebook environment:
 
-- `aba_law_schools.csv` — ABA-approved law school directory
 - `appointments.csv` — Raw appointment records from court documents
 - `attorneys.csv` — Attorney demographic and educational data
 - `mdls.csv` — MDL case metadata including filing and transfer dates
 - `orders.csv` — MDL orders with assigned judges
+- `aba_law_schools.csv` — ABA-approved law school directory
+
+## Key Features
+
+- **Publication-quality styling**: All figures use Times New Roman, 300 DPI, with removed top/right spines and consistent formatting
+- **Commented code**: Each section includes explanatory comments describing data transformations, calculations, and visualization choices
+- **Reproducibility**: All statistics, counts, and percentages are computed directly from the data; no hard-coded numbers
+- **Testable assumptions**: Filtering criteria (e.g. plaintiff-side only) are explicit and documented
 
